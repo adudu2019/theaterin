@@ -112,7 +112,7 @@ const Home = () => {
     <Header/>
     <section className='bg-home-image h-screen bg-no-repeat bg-cover bg-center'>
         <div className="backdrop-brightness-50 w-full h-full flex items-center justify-center text-center">
-            <h2 className='text-white text-6xl font-black'>
+            <h2 className='text-white text-6xl font-black max-sm:text-4xl'>
                 WELCOME <br /> TO OUR <br /> TEATHER
             </h2>
         </div>
@@ -121,8 +121,8 @@ const Home = () => {
     {/* section search */}
     <section>
     <div className="form-search flex justify-center items-center my-10 flex-col">
-            <form onSubmit={onSubmitHandler}>
-                <input 
+            <form onSubmit={onSubmitHandler} className='max-sm:flex max-sm:w-full max-sm:px-5'>
+                 <input 
                 type="text" 
                 placeholder=" Search"
                 className='border-2 p-2 rounded-md w-80 border-black'
@@ -137,7 +137,7 @@ const Home = () => {
 
     {/* section list film */}
     <section >
-    <div className="flex flex-wrap gap-3 m-3">
+    <div className="flex flex-wrap gap-3 m-3 max-sm:justify-center">
         {
             anime.map(i => (
 

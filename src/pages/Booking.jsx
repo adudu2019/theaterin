@@ -70,11 +70,11 @@ const Booking = () => {
   return (
     <>
     <h3 class="mb-4 font-black text-gray-900 text-center mt-4"> This is your ticket! <br /> Enjoy your film </h3>
-    <div className="flex flex-wrap gap-3 m-3">
+    <div className="flex flex-wrap gap-3 m-3 max-sm:justify-center">
         {
             insert.map(i => (
-                <div class="max-w-sm border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                    <div class="p-5">
+                <div class="max-w-sm border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 max-sm:w-full">
+                    <div class="p-10">
                         <h3 class="mb-4 font-bold text-gray-900 text-white"> This your ticket! <br /> Enjoy your film </h3>
                         <h5 class="mb-2 text-2xl font-bold text-gray-900 text-white"> {i.name} </h5>
                         <h9 class="mb-2 font-bold text-gray-900 text-white flex"> {i.date} </h9>

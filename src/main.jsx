@@ -7,7 +7,7 @@ import App from "./app";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename = '/theaterin/'>
       <App />
     </BrowserRouter>
   </React.StrictMode>
